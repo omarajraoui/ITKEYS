@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[top=1.5cm,bottom=1.5cm,left=2cm,right=2cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\definecolor{accent}{HTML}{2C3E50}
+\definecolor{light}{HTML}{7F8C8D}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}[\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\LARGE\bfseries <<name>>}\\[4pt]
+{\color{light}\small <<phone>> \enspace | \enspace <<email>> \enspace | \enspace <<linkedin>> \enspace | \enspace <<location>>}
+\end{center}
+
+\vspace{2pt}
+
+% Summary
+{\color{light}\small <<summary>>}
+
+\section{Exp\'erience Professionnelle}
+<<experiences>>
+
+\section{Formation}
+<<education>>
+
+\section{Comp\'etences Techniques}
+<<skills>>
+
+\section{Langues}
+<<languages>>
+
+\end{document}

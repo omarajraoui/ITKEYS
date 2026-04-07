@@ -1,0 +1,215 @@
+{
+  "profile": {
+    "name": "Omar Ajraoui",
+    "phone": "+33 7 44 78 37 58",
+    "email": "omarajraoui5@gmail.com",
+    "linkedin": "linkedin.com/in/omarajraoui",
+    "github": "github.com/omarajraoui",
+    "address": "27 Rue du Javelot, 75013 Paris",
+    "addresses": {
+      "paris": "27 Rue du Javelot, 75013 Paris",
+      "lyon": "69 Rue Eugène Pons, 69004 Lyon",
+      "lille": "Villeneuve d'Ascq, 59491",
+      "marseille": "La Cannebière, 13001 Marseille"
+    },
+    "location": "Paris, France",
+    "locations": {
+      "paris": "Paris, France",
+      "lyon": "Lyon, France",
+      "lille": "Lille, France",
+      "marseille": "Marseille, France",
+      "toulouse": "Toulouse, France",
+      "bordeaux": "Bordeaux, France",
+      "nantes": "Nantes, France",
+      "nice": "Nice, France",
+      "sophia-antipolis": "Sophia Antipolis, France",
+      "default": "Paris, France"
+    },
+    "languages": [
+      {"lang": "Arabe", "level": "Maternel"},
+      {"lang": "Français", "level": "Courant"},
+      {"lang": "Anglais", "level": "Courant"}
+    ]
+  },
+  "summaries": {
+    "tech": "Ingénieur logiciel fullstack ayant travaillé sur des projets à fort enjeu technique, dont les Jeux Olympiques Paris 2024. Développement d'applications critiques, intégration de solutions IA Générative en production (RAG, LLM) et automatisation des pipelines CI/CD. À l'aise sur l'ensemble du cycle de vie applicatif, du code à la mise en production.",
+    "consulting": "Ingénieur en systèmes d'information (Master MIAGE Paris Dauphine\u2011PSL + Diplôme d'ingénieur ENSIAS), avec une expérience de pilotage de projets IT et une maîtrise des architectures SI, des cycles de vie applicatifs et des environnements cloud. Intéressé par des rôles de conseil en stratégie IT au sein de grandes organisations."
+  },
+  "experiences": [
+    {
+      "id": "freelance",
+      "company": "Freelance",
+      "date_start": "Novembre 2024",
+      "date_end": "Janvier 2026",
+      "location": "Paris, France",
+      "titles": {
+        "tech": "Développeur Fullstack & IA",
+        "consulting": "Consultant IT – Cadrage & Transformation SI"
+      },
+      "depth": "strong",
+      "interview_safe": true,
+      "stack": ["Java", "Spring Boot", "React", "Python", "PageIndex", "LLM", "Docker", "GitLab CI/CD", "PostgreSQL", "REST API"],
+      "bullets_pool": {
+        "tech": [
+          "Conduit la migration d'une application e-commerce d'une architecture monolithique vers des microservices Java Spring Boot, avec conception des API, gestion des flux entre services et déploiement conteneurisé Docker.",
+          "Développé l'interface React consommant les API REST, permettant aux utilisateurs de naviguer dans le catalogue produits et d'interroger le chatbot depuis une interface unifiée.",
+          "Conçu et livré un chatbot IA pour usage interne, intégrant PageIndex pour l'indexation documentaire et permettant des interrogations en langage naturel sur la base de connaissances de l'entreprise.",
+          "Mis en place un pipeline CI/CD GitLab couvrant build, tests et déploiement automatisé via Docker, assurant des livraisons sans intervention manuelle en production.",
+          "Exploré des architectures RAG en Python pour l'enrichissement de réponses LLM à partir de documents non structurés, dans le cadre d'un projet personnel de veille technologique.",
+          "Lancé Kodelume, un projet entrepreneurial de pipeline de prospection agentique combinant LLM et agents IA pour automatiser la qualification et la mise en relation B2B."
+        ],
+        "consulting": [
+          "Cadré la refonte architecturale d'une plateforme e-commerce : analyse de l'existant, définition de la cible microservices et pilotage de la transition technique en lien direct avec le client.",
+          "Défini l'architecture applicative complète de la solution : conception des API, modélisation des flux entre services et stratégie de déploiement conteneurisé.",
+          "Intégré une brique d'intelligence artificielle (chatbot PageIndex) pour enrichir les capacités du SI à partir des documents internes du client, avec mise en production via Docker.",
+          "Piloté la livraison end-to-end de la solution, de la conception à la mise en production, en coordonnant les contraintes techniques et les besoins fonctionnels."
+        ]
+      }
+    },
+    {
+      "id": "atos",
+      "company": "ATOS (JO Paris 2024)",
+      "date_start": "Novembre 2023",
+      "date_end": "Octobre 2024",
+      "location": "Paris, France",
+      "titles": {
+        "tech": "Ingénieur Fullstack – DevOps / Cloud (Apprentissage)",
+        "consulting": "Ingénieur SI – DevOps / Cloud (Apprentissage)"
+      },
+      "depth": "strong",
+      "interview_safe": true,
+      "stack": ["React.js", "GraphQL", "OpenShift", "Kubernetes", "GitLab CI/CD", "Terraform", "Ansible", "Docker", "Prometheus", "Grafana", "SonarQube", "Trivy", "Spring Boot", "Java", "Azure", "PostgreSQL"],
+      "bullets_pool": {
+        "tech": [
+          "Conçu et développé deux applications fullstack critiques pour les JO Paris 2024 : la Competition Activity Monitor (CAM) pour le suivi temps réel des résultats, et la Venue Activity Monitor (VAM) pour la supervision des sites olympiques.",
+          "Développé les interfaces React.js avec intégration GraphQL pour consommer des données en temps réel, avec gestion fine des états applicatifs adaptée aux contraintes de charge des Jeux.",
+          "Déployé et orchestré les applications sur OpenShift avec une architecture haute disponibilité garantissant zéro interruption de service sur toute la durée de l'événement.",
+          "Mis en place les pipelines GitLab CI/CD et intégré une chaîne DevSecOps complète (SonarQube, Trivy) pour que chaque livraison soit validée et traçable avant d'atteindre la production.",
+          "Provisionné l'infrastructure avec Terraform et Ansible, et mis en place l'observabilité temps réel avec Prometheus et Grafana pour détecter les anomalies avant impact utilisateur.",
+          "Conception et développement de microservices backend Spring Boot exposant des API REST et GraphQL.",
+          "Automatisation du provisionnement de l'infrastructure avec Terraform et de la gestion de configuration avec Ansible sur Azure Cloud.",
+          "Optimisation du déploiement et de l'orchestration via les pipelines CI/CD GitLab pour Kubernetes/OpenShift, utilisant ConfigMaps et Secrets pour la configuration dynamique."
+        ],
+        "consulting": [
+          "Intervention sur un projet SI à enjeu national (Jeux Olympiques de Paris 2024), avec une exigence de continuité de service sur toute la durée des Jeux et de fortes contraintes de sécurité.",
+          "Contribution à la mise en œuvre d'une architecture de haute disponibilité sur OpenShift : instances redondantes garantissant la continuité de service en cas de défaillance.",
+          "Participation à l'élaboration et à l'optimisation de la stratégie de déploiement continu (GitLab CI/CD), assurant des livraisons fiables et traçables tout au long du projet.",
+          "Mise en place d'une démarche DevSecOps (SonarQube, Trivy, tests automatisés) pour garantir la conformité et la qualité des livrables dans un contexte réglementaire exigeant.",
+          "Développement de services backend (Spring Boot) et d'interfaces frontend (React.js) exposant des API REST et GraphQL, en lien direct avec les besoins fonctionnels du projet."
+        ]
+      }
+    },
+    {
+      "id": "adria",
+      "company": "ADRIA Business Technology",
+      "date_start": "Septembre 2022",
+      "date_end": "Août 2023",
+      "location": "Casablanca, Maroc",
+      "titles": {
+        "tech": "Développeur Fullstack – Java / Spring Boot / React",
+        "consulting": "Développeur Fullstack"
+      },
+      "depth": "strong",
+      "interview_safe": true,
+      "stack": ["TypeScript", "React", "Java", "Spring Boot", "Docker", "GitLab CI/CD", "MySQL", "MongoDB", "Spring Security", "Kubernetes", "Terraform", "Ansible"],
+      "bullets_pool": {
+        "tech": [
+          "Développé un plugin JIRA en TypeScript/React et Java Spring Boot exposant des API REST sécurisées intégrées aux workflows métier, offrant des fonctionnalités comparables à TimeDoctor directement depuis JIRA.",
+          "Conçu et développé des microservices Java Spring Boot pour un projet client bancaire (BNDE), avec conception des API, gestion des flux entre services et déploiement conteneurisé Docker.",
+          "Mis en place un pipeline CI/CD GitLab avec déploiement Docker et revues de code systématiques pour assurer la qualité et la maintenabilité.",
+          "Conteneurisation et déploiement de microservices backend sur Docker/Kubernetes, intégrés dans un pipeline DevOps automatisé.",
+          "Optimisation et évolution d'un système bancaire en production, incluant la sécurisation des API REST avec JWT et Spring Security."
+        ],
+        "consulting": [
+          "Développement d'un plugin JIRA (TypeScript/React + Java Spring Boot) pour l'optimisation des workflows de gestion de projet.",
+          "Conception d'API REST sécurisées, intégration avec les processus métier et mise en place d'un pipeline CI/CD GitLab avec déploiement Docker.",
+          "Participation aux revues de code et amélioration continue de la maintenabilité du SI."
+        ]
+      }
+    },
+    {
+      "id": "sqli",
+      "company": "SQLI",
+      "date_start": "Janvier 2022",
+      "date_end": "Juillet 2022",
+      "location": "Rabat, Maroc",
+      "titles": {
+        "tech": "Développeur Fullstack (Stage)",
+        "consulting": "Développeur Fullstack (Stage)"
+      },
+      "depth": "medium",
+      "interview_safe": true,
+      "stack": ["TypeScript", "React.js", "Java", "Spring Boot", "Docker", "MySQL", "Git", "Spring Security", "JWT", "JPA"],
+      "bullets_pool": {
+        "tech": [
+          "Conçu et développé une application web RH (React + Java Spring Boot) avec gestion des utilisateurs, formulaires dynamiques et intégration d'API REST.",
+          "Participation aux pratiques Agile/Scrum et aux cycles de livraison en environnement conteneurisé Docker.",
+          "Conception et implémentation d'API REST performantes, optimisation de l'accès aux données avec JPA, et sécurisation des échanges via JWT/Spring Security."
+        ],
+        "consulting": [
+          "Conception et développement d'une application web RH (React + Java Spring Boot) avec gestion des utilisateurs et intégration d'API REST.",
+          "Participation aux pratiques Agile/Scrum et aux cycles de livraison en environnement conteneurisé Docker."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": "dauphine",
+      "school": "Université Paris Dauphine-PSL",
+      "date_start": "2023",
+      "date_end": "2024",
+      "degree": "Master 2 - MIAGE Systèmes d'Information et Transformation Numérique (SITN)",
+      "location": "Paris, France",
+      "memoir": {
+        "tech": "Intégration DevSecOps et automatisation de la sécurité dans les pipelines CI/CD et les environnements cloud conteneurisés.",
+        "consulting": "Intégration DevSecOps et automatisation de la sécurité dans les pipelines CI/CD et les environnements cloud conteneurisés – étude de la gouvernance et de la maturité SI."
+      }
+    },
+    {
+      "id": "ensias",
+      "school": "ENSIAS - École Nationale Supérieure d'Informatique et d'Analyse des Systèmes",
+      "date_start": "2020",
+      "date_end": "2023",
+      "degree": "Diplôme d'Ingénieur - Web Intelligence",
+      "location": "Rabat, Maroc",
+      "memoir": {
+        "tech": "Développement d'un plugin JIRA pour l'automatisation du suivi des tâches projet et l'optimisation des workflows de développement logiciel, avec des fonctionnalités comparables à TimeDoctor.",
+        "consulting": "Développement d'un plugin JIRA pour l'automatisation du suivi des tâches projet et l'optimisation des workflows de développement logiciel."
+      }
+    },
+    {
+      "id": "cpge",
+      "school": "CPGE Carnot Prépas",
+      "date_start": "2018",
+      "date_end": "2020",
+      "degree": "Classes Préparatoires aux Grandes Écoles d'Ingénieurs - Mathématiques & Physique (MP)",
+      "location": "Meknès, Maroc",
+      "memoir": null
+    }
+  ],
+  "skills": {
+    "tech": {
+      "IA Générative": "RAG, LLM, indexation documentaire (PageIndex), prompt engineering, évaluation des outputs",
+      "Langages": "Python, Java, TypeScript, Bash",
+      "Développement": "React.js, GraphQL, Django, Spring Boot, REST API",
+      "DevOps & CI/CD": "GitLab CI/CD, Docker, Kubernetes, OpenShift",
+      "Infrastructure as Code": "Terraform, Ansible",
+      "DevSecOps & Qualité": "SonarQube, Trivy, tests automatisés",
+      "Observabilité": "Prometheus, Grafana",
+      "Cloud": "Azure, GCP",
+      "Bases de données": "PostgreSQL, MySQL, MongoDB",
+      "Systèmes": "Linux, Git"
+    },
+    "consulting": {
+      "Stratégie & Architecture SI": "Diagnostic SI, définition de trajectoire, architecture applicative et cloud",
+      "Gestion de projet": "Méthodes Agile/Scrum, pilotage de delivery, coordination multi-parties prenantes, reporting",
+      "DevOps & CI/CD": "GitLab CI/CD, Docker, Kubernetes, OpenShift",
+      "Infrastructure & Cloud": "Terraform, Ansible, GCP",
+      "Développement": "Java, Spring Boot, TypeScript, React, Node.js, Python",
+      "Bases de données": "PostgreSQL, MySQL, MongoDB",
+      "Outils": "Jira, GitLab, Prometheus, Grafana, SonarQube"
+    }
+  }
+}
+

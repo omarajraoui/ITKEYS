@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Usage: ./gen
+# Compile CV + lettre depuis data/latest_inspo.json
+set -e
+export PATH="/usr/local/texlive/2026basic/bin/universal-darwin:$PATH"
+cd "$(dirname "$0")"
+source venv/bin/activate
+python compile_from_json.py
+LATEST=$(ls -td output/*/ 2>/dev/null | head -1)
+[ -n "$LATEST" ] && open "$LATEST"

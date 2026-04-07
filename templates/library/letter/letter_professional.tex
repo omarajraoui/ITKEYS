@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,top=1.5cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage[french]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{medgray}{HTML}{666666}
+\definecolor{lightgray}{HTML}{CCCCCC}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Two-column header
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+  {\Large\bfseries\color{darkgray} <<name>>}\\[4pt]
+  {\small\color{medgray} <<address>>}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.40\textwidth}
+  \raggedleft
+  {\small\color{medgray} <<email>>}\\
+  {\small\color{medgray} <<phone>>}\\
+  {\small\color{medgray} \today}
+\end{minipage}
+
+\vspace{0.3em}
+{\color{lightgray}\rule{\linewidth}{0.3pt}}
+\vspace{1em}
+
+<<company_name>>\\
+{\small\color{medgray} <<company_address>>}
+
+\vspace{1em}
+
+{\bfseries\color{darkgray} Objet : <<position>>}
+
+\vspace{0.8em}
+
+Madame, Monsieur,
+
+<<body>>
+
+\vspace{1.5em}
+
+Cordialement,
+
+\vspace{2em}
+
+{\bfseries <<name>>}
+
+\end{document}

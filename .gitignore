@@ -1,0 +1,43 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+.env.local
+
+# Data (user-specific, generated)
+data/users/
+data/scan_results.json
+data/scan_technicien.json
+data/applications.db
+data/latest_inspo.json
+data/project_draft.json
+output/
+
+# Frontend
+dashboard/node_modules/
+dashboard/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / Tools
+.vscode/
+.idea/
+.claude/
+.agents/
+.windsurf/
+skills-lock.json
+
+# Temp / Docs (session-specific)
+*.log
+/tmp/
+*.pdf
+CHANGELOG_SESSION.md
+EXECUTION_PLAN.md
+PROGRESS.md
+modifications.md

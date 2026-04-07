@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,top=0cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage[french]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+\definecolor{headerblue}{HTML}{2C3E50}
+\definecolor{accentblue}{HTML}{2980B9}
+\definecolor{textgray}{HTML}{555555}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Header bar
+\noindent\colorbox{headerblue}{%
+  \parbox{\dimexpr\textwidth-2\fboxsep}{%
+    \vspace{12pt}
+    \centering
+    {\color{white}\LARGE\bfseries <<name>>}\\[4pt]
+    {\color{white!80}\small <<email>> \enspace | \enspace <<phone>> \enspace | \enspace <<address>>}
+    \vspace{10pt}
+  }%
+}
+
+\vspace{1.5em}
+
+\begin{tabularx}{\textwidth}{Xr}
+  \textbf{<<company_name>>} & \today \\
+  \textit{<<company_address>>} & \\
+\end{tabularx}
+
+\vspace{0.5em}
+
+{\color{accentblue}\rule{\linewidth}{0.5pt}}
+
+\vspace{0.5em}
+
+{\large\bfseries\color{headerblue} Candidature : <<position>>}
+
+\vspace{0.5em}
+
+{\color{textgray}
+Madame, Monsieur,
+
+<<body>>
+}
+
+\vspace{1.5em}
+
+Cordialement,
+
+\vspace{1.5em}
+
+{\bfseries <<name>>}
+
+\end{document}

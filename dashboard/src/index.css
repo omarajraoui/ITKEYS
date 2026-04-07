@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ── Design System: Modern Dark Cinema ── */
+  /* Based on UI/UX Pro Max: Dark Mode + Swiss Minimalism hybrid */
+
+  /* Surfaces */
+  --bg-base:    #0a0a0c;
+  --bg-raised:  #111114;
+  --bg-surface: #16161a;
+  --bg-hover:   #1c1c21;
+  --bg-active:  #252529;
+
+  /* Borders */
+  --border:       rgba(255, 255, 255, 0.06);
+  --border-light: rgba(255, 255, 255, 0.10);
+  --border-focus: #e07733;
+
+  /* Text */
+  --text-primary:   #ededef;
+  --text-secondary: #8a8f98;
+  --text-muted:     #4e535c;
+  --text-faint:     #2a2d33;
+
+  /* Accent (orange — sparingly) */
+  --accent:       #e07733;
+  --accent-dim:   #b5602a;
+  --accent-glow:  rgba(224, 119, 51, 0.08);
+
+  /* Semantic */
+  --green:        #30d158;
+  --green-dim:    rgba(48, 209, 88, 0.10);
+  --yellow:       #ffd60a;
+  --yellow-dim:   rgba(255, 214, 10, 0.08);
+  --red:          #ff453a;
+  --red-dim:      rgba(255, 69, 58, 0.08);
+  --blue:         #0a84ff;
+  --blue-dim:     rgba(10, 132, 255, 0.08);
+  --orange:       #ff9f0a;
+  --teal:         #64d2ff;
+
+  /* Layout */
+  --sidebar-width: 220px;
+
+  /* Radii */
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  20px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.6);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+select option { background: var(--bg-surface); }
+
+/* ── Glass surface ── */
+.glass {
+  background: rgba(17, 17, 20, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--bg-raised);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  z-index: 30;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 25;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.sidebar-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* ── Animations ── */
+@keyframes spin    { to { transform: rotate(360deg); } }
+@keyframes fadeUp  { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideIn { from { opacity: 0; transform: translateX(100%); } to { opacity: 1; transform: translateX(0); } }
+@keyframes fadeIn  { from { opacity: 0; transform: translateX(-50%) translateY(8px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+@keyframes pulse   { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+/* ── Sidebar menu items ── */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  margin: 2px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 13px;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  border-left: 2px solid transparent;
+  position: relative;
+}
+.sidebar-item:hover {
+  background: transparent;
+  color: var(--text-primary);
+}
+.sidebar-item.active {
+  background: transparent;
+  color: var(--text-primary);
+  border-left-color: var(--accent);
+  font-weight: 600;
+}

@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[top=1.2cm,bottom=1.2cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\definecolor{header}{HTML}{1A1A2E}
+\definecolor{accent}{HTML}{16213E}
+\definecolor{gray}{HTML}{666666}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\titleformat{\section}{\large\bfseries\color{header}\scshape}{}{0pt}{}
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+\begin{document}
+
+% Dark header
+\noindent\colorbox{header}{%
+\parbox{\dimexpr\textwidth-2\fboxsep}{%
+\vspace{8pt}
+\centering
+{\color{white}\LARGE\bfseries <<name>>}\\[3pt]
+{\color{white!70}\small <<title>>}\\[3pt]
+{\color{white!60}\footnotesize <<phone>> \enspace | \enspace <<email>> \enspace | \enspace <<linkedin>> \enspace | \enspace <<location>>}
+\vspace{6pt}
+}}
+
+\vspace{8pt}
+
+{\color{gray}\small <<summary>>}
+
+\section{Exp\'erience Professionnelle}
+<<experiences>>
+
+\section{Formation}
+<<education>>
+
+\section{Comp\'etences}
+<<skills>>
+
+\section{Langues}
+<<languages>>
+
+\end{document}
